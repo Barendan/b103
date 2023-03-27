@@ -1,7 +1,10 @@
 
+import PostContent from "../../components/posts/post-detail/post-content"
 
-function SinglePostPage() {
-
+function PostDetailPage() {
+  return (
+    <PostContent />
+  )
 }
 
-export default SinglePostPage;
+export default PostDetailPage
