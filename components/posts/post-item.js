@@ -8,7 +8,7 @@ function PostItem(props) {
   const formattedDate = new Date(date).toLocaleDateString('en-us', {
     day: 'numeric',
     month: 'long',
-    year: 'numberic'
+    year: 'numeric'
   });
 
   const imagePath = `/images/posts/${slug}/${image}`;
@@ -16,7 +16,7 @@ function PostItem(props) {
 
   return (
     <li className={classes.post}>
-      <Link href={linkPath}>
+      <Link href={linkPath} legacyBehavior>
         <a>
           <div className={classes.image}>
             <Image src={imagePath} alt={title} width={300} height={200} layout="responsive" />

@@ -1,11 +1,11 @@
 import PostsGrid from './posts-grid'
 import classes from './all-posts.module.css'
 
-function AllPosts() {
+function AllPosts(props) {
   return (
     <section className={classes.posts}>
       <h1>All Posts</h1>
-      <Postsgrid posts={props.posts} />
+      <PostsGrid posts={props.posts} />
     </section>
   )
 }
